@@ -1,4 +1,3 @@
-openspectrum.github.io
-======================
+http://tannerwelsh.com
 
-Personal website.
+Personal website for Tanner Welsh.
