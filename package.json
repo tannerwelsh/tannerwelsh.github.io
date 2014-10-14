@@ -16,7 +16,7 @@
     "url": "git://github.com/openspectrum/openspectrum.github.io.git"
   },
   "author": "Tanner Welsh",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/openspectrum/openspectrum.github.io/issues"
   },
