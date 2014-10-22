@@ -8,7 +8,7 @@ module.exports = function(grunt) {
           destPrefix: 'public/css'
         }
       , files: {
-          'picnic.min.css': 'picnic/releases/latest.min.css'
+          'gridism.css': 'gridism/gridism.css'
         }
       }
     }
