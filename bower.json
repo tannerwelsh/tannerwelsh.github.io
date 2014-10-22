@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "gridism": "~0.2.1"
+    "gridism": "~0.2.1",
+    "normalize-css": "~3.0.2"
   }
 }

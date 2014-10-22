@@ -9,6 +9,7 @@ module.exports = function(grunt) {
         }
       , files: {
           'gridism.css': 'gridism/gridism.css'
+        , 'normalize.css': 'normalize-css/normalize.css'
         }
       }
     }
