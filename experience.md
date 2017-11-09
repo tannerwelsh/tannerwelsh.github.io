@@ -2,7 +2,6 @@
 layout: page
 title: Experience
 permalink: /cv/
-
 ---
 
 ### Jobs
