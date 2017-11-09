@@ -1,0 +1,26 @@
+title: Tanner Welsh
+email: tannerwelsh@gmail.com
+description: >-
+  Design and build for human learning.
+baseurl: ""
+url: "http://tannerwelsh.com/"
+twitter_username: tannerwelsh
+github_username:  tannerwelsh
+
+# Build settings
+markdown: kramdown
+theme: jekyll-athena
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
