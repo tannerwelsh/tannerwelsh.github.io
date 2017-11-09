@@ -1,8 +1,5 @@
 source "https://rubygems.org"
 
-# Use Athena theme [https://github.com/broccolini/athena]
-gem "jekyll-athena"
-
 # Use GH Pages. To upgrade, run `bundle update github-pages`
 gem "github-pages", group: :jekyll_plugins
 

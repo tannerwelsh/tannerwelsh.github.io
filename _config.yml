@@ -9,7 +9,6 @@ github_username:  tannerwelsh
 
 # Build settings
 markdown: kramdown
-theme: jekyll-athena
 plugins:
   - jekyll-feed
 
