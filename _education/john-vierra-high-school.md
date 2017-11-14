@@ -1,6 +1,6 @@
 ---
 school: John Vierra High School
 location: Angels Camp, CA
-start: 2003
-end: 2004
+start_year: 2003
+end_year: 2004
 ---

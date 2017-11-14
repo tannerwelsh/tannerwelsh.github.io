@@ -6,6 +6,7 @@ start_year: 2012
 end_month: Mar
 end_year: 2012
 duration: 3 mos
+location: New York City, NY
 cause: Education
 ---
 Develop courses to teach users JavaScript and web development.

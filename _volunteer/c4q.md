@@ -6,5 +6,6 @@ start_year: 2015
 end_month: Dec
 end_year: 2015
 duration: 7 mos
+location: Queens, NY
 cause: Economic Empowerment
 ---

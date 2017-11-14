@@ -1,6 +1,6 @@
 ---
 school: Bret Harte Union High School
 location: Angels Camp, CA
-start: 2000
-end: 2001
+start_year: 2000
+end_year: 2001
 ---

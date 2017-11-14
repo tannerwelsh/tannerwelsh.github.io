@@ -2,6 +2,6 @@
 school: edX
 location: Online
 field_of_study: Architecture
-start: 2017
-end: 2018
+start_year: 2017
+end_year: 2018
 ---

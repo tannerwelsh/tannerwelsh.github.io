@@ -6,6 +6,7 @@ start_year: 2005
 end_month: Apr
 end_year: 2006
 duration: 8 mos
+location: Vancouver, BC, Canada
 cause: Environment
 ---
 Public awareness campaign planning and execution: posters, events, student surveys, message boards, and more.
