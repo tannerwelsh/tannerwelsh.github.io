@@ -4,7 +4,7 @@ description: >-
   Educator for humans (including self)
 baseurl: ""
 url: "http://tannerwelsh.com/"
-github_repo: "tannerwelsh.github.io" 
+github_repo: "tannerwelsh.github.io"
 twitter_username: tannerwelsh
 github_username:  tannerwelsh
 
@@ -12,6 +12,11 @@ github_username:  tannerwelsh
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+collections:
+  - work
+  - education
+  - volunteer
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
