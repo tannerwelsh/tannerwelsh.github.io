@@ -1,5 +1,39 @@
 # Design notes
 
+## Structure
+
+Primary pages (show in main menu):
+
+- Home
+- Work
+  - contracting work: select clients & projects
+  - employment history
+- Learning
+  - list of skills (from LinkedIn?)
+  - courses / educational endeavors
+  - favorite books
+- Projects
+  - ??
+  - courses / curricula:
+    - codecademy JS regexp project - publish as own page??
+    - https://www.codecademy.com/courses/translate-that-tospanish/0/1
+    - https://www.codecademy.com/courses/javascript-lesson-205/0/1
+    - https://www.codecademy.com/courses/intro-to-client-side-javascript/0/1
+    - https://www.codecademy.com/courses/intro-to-the-dom/0/1
+    - https://github.com/sepnyc/pd-javascript
+    - https://github.com/codeunion/photo-gallery-cli
+    - https://github.com/codeunion/linkedout-example
+  - code projects:
+    - https://github.com/tannerwelsh/quote-bot
+    - https://github.com/tannerwelsh/evernote-to-markdown
+    - piano tutor
+
+Secondary pages (don't show in main menu)
+
+- CV
+  - full collection of work/learning history
+  - make downloadable
+
 ## Themes
 
 big list of themes: https://github.com/jekyll/jekyll/wiki/Themes
