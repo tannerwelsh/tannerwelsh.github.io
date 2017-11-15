@@ -68,6 +68,8 @@
 .header-social { fill: $color-foreground; }
 .header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
+.text-secondary { color: $color-text-secondary; } // used for secondary text
+.text-caption { color: $color-text-caption; } // used for captions
 
 /* Layout utilities */
 .container { max-width: $container-width; }
