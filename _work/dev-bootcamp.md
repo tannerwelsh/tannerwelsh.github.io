@@ -7,4 +7,5 @@ end_month: Aug
 end_year: 2014
 duration: 2 yrs 3 mos
 location: New York City
+highlight: true
 ---
