@@ -10,4 +10,3 @@ location: Brooklyn, NY
 cause: Education
 highlight: true
 ---
-Help students learn the Spanish language, starting with the very basics.
