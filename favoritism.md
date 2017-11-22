@@ -2,7 +2,7 @@
 layout: page
 title: Favoritism
 permalink: /favoritism/
-in_menu: true
+in_menu: false
 published: false
 ---
 
