@@ -211,8 +211,12 @@
 
 // Hide when printing
 @media print {
-  .no-print, .no-print *
-  {
+  .no-print, .no-print * {
     display: none !important;
+  }
+
+  .print-without-spacing {
+    margin: 0px;
+    padding: 0px;
   }
 }
