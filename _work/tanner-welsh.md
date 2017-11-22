@@ -4,7 +4,7 @@ company: Tanner Welsh
 start_month: Sep
 start_year: 2014
 end_year: 2017
-location: New York City
+location: New York City / Remote
 website: http://www.tannerwelsh.com
 highlight: true
 ---

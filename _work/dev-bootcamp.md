@@ -6,7 +6,7 @@ start_year: 2012
 end_month: Aug
 end_year: 2014
 duration: 2 yrs 3 mos
-location: New York City, San Francisco, Chicago
+location: New York City / San Francisco / Chicago
 website: https://devbootcamp.com/
 highlight: true
 ---
