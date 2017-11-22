@@ -1,0 +1,81 @@
+---
+layout: page-basic
+title: Resume
+permalink: /cv/
+in_menu: false
+---
+
+<h1>Tanner Welsh <small class="right text-right text-caption italic">Resumé</small></h1>
+
+<div class="col-8 inline-block">
+  <em>Select professional, educational, and volunteering experience.
+    <br>For a longer list of experiences and skills, visit my LinkedIn profile: <a href="{{ site.linkedin_profile }}" title="Tanner Welsh on LinkedIn">{{ site.linkedin_profile }}</a>
+  </em>
+</div>
+<div class="col-3 inline-block right text-right">
+  <a href="mailto:{{ site.email }}" title="Email Tanner">{{ site.email }}</a>
+  <br><a href="{{ site.url }}" title="Tanner's website">{{ site.url }}</a>
+</div>
+
+<h3 id="work" class="border-bottom-thin">Work</h3>
+
+{% assign jobs = site.work | where:"highlight",true | sort:"end_year" | reverse %}
+{% for job in jobs %}
+<h4>
+  {{ job.title }}
+  <small class="right text-right text-caption italic">
+    {{ job.location }}
+    <br>{{ job.start_year }} — {{ job.end_year }}
+  </small>
+  <br>
+  <small class="italic text-secondary">
+    {% if job.website %}
+      at <a href="{{ job.website }}" title="{{ job.company }}">{{ job.company }}</a>
+    {% else %}
+      at {{ job.company }}
+    {% endif %}
+  </small>
+</h4>
+
+<div class="text-accent">
+  {{ job.content }}
+</div>
+{% endfor %}
+
+<h3 id="learn" class="border-bottom-thin">Learn</h3>
+
+{% assign studies = site.education | where:"highlight",true | sort:"end_year" | reverse %}
+{% for study in studies %}
+<h4>
+  {{ study.school }}
+  <small class="right text-right text-caption italic">
+    {{ study.location }}
+    <br>{{ study.start_year }} — {{ study.end_year }}
+  </small>
+  <br>
+  <small class="italic text-secondary">
+    subject: {{ study.field_of_study }}
+  </small>
+</h4>
+
+{{ study.content }}
+{% endfor %}
+
+<h3 id="volunteer" class="border-bottom-thin">Volunteer</h3>
+
+{% assign volunteers = site.volunteer | where:"highlight",true | sort:"end_year" | reverse %}
+{% for vol in volunteers %}
+<h4>
+  {{ vol.role }}
+  <small class="right text-right text-caption italic">
+    {{ vol.location }}
+    <br>{{ vol.end_year }}
+  </small>
+  <br>
+  <small class="italic text-secondary">
+    with {{ vol.organization }}
+  </small>
+</h4>
+
+{{ vol.content }}
+{% endfor %}
