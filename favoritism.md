@@ -2,6 +2,8 @@
 layout: page
 title: Favoritism
 permalink: /favoritism/
+in_menu: true
+published: false
 ---
 
 Things that I've found joy from.
