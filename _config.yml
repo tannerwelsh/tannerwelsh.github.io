@@ -3,15 +3,22 @@ email: tannerwelsh@gmail.com
 description: >-
   Educator for humans (including self)
 baseurl: ""
-url: "http://tannerwelsh.com/"
-github_repo: "tannerwelsh.github.io" 
+url: http://tannerwelsh.com/
+github_repo: tannerwelsh.github.io
 twitter_username: tannerwelsh
 github_username:  tannerwelsh
+linkedin_profile: https://www.linkedin.com/in/tannerwelsh/
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+collections:
+  - education
+  - projects
+  - volunteer
+  - work
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -68,6 +68,8 @@
 .header-social { fill: $color-foreground; }
 .header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
+.text-secondary { color: $color-text-secondary; } // used for secondary text
+.text-caption { color: $color-text-caption; } // used for captions
 
 /* Layout utilities */
 .container { max-width: $container-width; }
@@ -205,4 +207,16 @@
   .mr-lg-4 { margin-right: $spacer-4; }
   .mb-lg-4 { margin-bottom: $spacer-4; }
   .ml-lg-4 { margin-left: $spacer-4; }
+}
+
+// Hide when printing
+@media print {
+  .no-print, .no-print * {
+    display: none !important;
+  }
+
+  .print-without-spacing {
+    margin: 0px;
+    padding: 0px;
+  }
 }

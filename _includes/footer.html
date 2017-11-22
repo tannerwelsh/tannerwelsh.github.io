@@ -3,11 +3,14 @@
   https://github.com/broccolini/athena/blob/master/_includes/footer.html
 -->
 
-<div class="container mx-auto clearfix mt-2 mt-lg-4 px-2">
+<div class="container mx-auto clearfix mt-2 mt-lg-4 px-2 no-print">
   <div class="border-top-thick">
     <p class="sm-width-full left py-2 mb-0">Site <a class="text-accent" href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}">maintained by me</a></p>
 
     <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
+      <li class="inline-block mr-1">
+        <a href="/cv" title="Tanner Welsh's Resume">CV</a>
+      </li>
       <li class="inline-block mr-1">
         <a href="https://twitter.com/tannerwelsh" title="@tannerwelsh on Twitter">Twitter</a>
       </li>
@@ -18,10 +21,10 @@
         <a href="https://github.com/tannerwelsh" title="@tannerwelsh on GitHub">GitHub</a>
       </li>
       <li class="inline-block mr-1">
-        <a href="https://www.linkedin.com/in/tannerwelsh" title="Tanner Welsh's profile on LinkedIn">LinkedIn</a>
+        <a href="{{ site.linkedin_profile }}" title="Tanner Welsh on LinkedIn">LinkedIn</a>
       </li>
       <li class="inline-block">
-        <a href="https://goodreads.com/tannerwelsh" title="Tanner Welsh's profile on Goodreads">Goodreads</a>
+        <a href="https://goodreads.com/tannerwelsh" title="Tanner Welsh on Goodreads">Goodreads</a>
       </li>
     </ul>
   </div>
