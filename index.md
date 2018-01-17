@@ -5,4 +5,6 @@
 layout: home
 ---
 
+Currently working to scientifically measure persuasion in digital advocacy as Lead Engineer at <a href="https://swayable.com/" title="Swayable">Swayable</a>.
+
 Among other things, I also like to <a href="https://github.com/tannerwelsh" title="Tanner Welsh on GitHub">write computer programs</a> and <a href="https://goodreads.com/tannerwelsh" title="Tanner Welsh on Goodreads">read books</a>.
