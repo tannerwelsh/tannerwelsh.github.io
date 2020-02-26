@@ -27,17 +27,46 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+html, body {
+  height: 100%;
+}
+
 body {
-    font-family: $body-font-family;
-    font-size: $body-font-size;
-    line-height: 1.5;
-    color: $color-body-text;
-    background-color: $color-background;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: 1.8;
+  color: $color-body-text;
+  border-color: $color-body-text;
+  background-color: $color-background;
+}
+
+body.theme-red {
+  background-color: $color-red;
+  color: $color-red-lighter;
+  border-color: $color-red-lighter;
+}
+
+body.theme-orange {
+  background-color: $color-orange;
+  color: $color-orange-lighter;
+  border-color: $color-orange-lighter;
+}
+
+body.theme-purple {
+  background-color: $color-purple;
+  color: $color-purple-lighter;
+  border-color: $color-purple-lighter;
+}
+
+body.theme-blue {
+  background-color: $color-blue;
+  color: $color-blue-lighter;
+  border-color: $color-blue-lighter;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,9 +74,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.25em;
 }
 
-h1, .h1 { font-size: $h1-size; }
-h2, .h2 { font-size: $h2-size; }
-h3, .h3 { font-size: $h3-size; }
+h1, .h1 { font-size: $h1-size; font-weight: $boldest; }
+h2, .h2 { font-size: $h2-size; font-weight: $bolder; }
+h3, .h3 {
+  font-size: $h3-size;
+  font-weight: $bolder;
+  border-bottom: 0.5px dotted;
+  margin-top: 4em;
+  margin-bottom: 1.66em;
+}
 h4, .h4 { font-size: $h4-size; }
 h5, .h5 { font-size: $h5-size; }
 h6, .h6 { font-size: $h6-size; text-transform: uppercase; letter-spacing: 0.02em; }
@@ -60,7 +95,12 @@ a {
 }
 
 a:hover {
-  color: $color-primary-link;
   text-decoration: none;
   border-bottom: 1px dotted;
 }
+
+.theme-red a:hover { color: darken($color-red-lighter, 33%); }
+.theme-orange a:hover { color: darken($color-orange-lighter, 33%); }
+.theme-purple a:hover { color: darken($color-purple-lighter, 33%); }
+.theme-blue a:hover { color: darken($color-blue-lighter, 33%); }
+

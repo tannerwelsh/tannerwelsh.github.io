@@ -1,4 +1,4 @@
-http://tannerwelsh.com
+https://tannerwelsh.com
 
 Personal website for Tanner Welsh.
 

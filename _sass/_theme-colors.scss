@@ -1,0 +1,54 @@
+// Colorful theme
+
+// Color variables
+$black: #080001;
+$gray-dark: #423F38;
+$gray: #A09992;
+$gray-light: #D7D5D1;
+$white: #FFE4E3;
+$red: #800C0B;
+$red-lightest: #FFE4E3;
+$orange: #DA9912;
+$orange-lightest: #FFF3D7;
+$green: #83FF15;
+$blue: #12B4DA;
+$blue-lightest: #DBF9FF;
+$purple: #3D0B80;
+$purple-lightest: #E9D8FF;
+
+// Config
+$color-background: $red !default;
+$color-foreground: $black !default;
+$color-title: $white !default;
+$color-header-bg: $black;
+$color-header-text: $white;
+$color-body-text: $white !default;
+$color-text-accent: $gray-dark !default;
+$color-text-secondary: $gray !default;
+$color-text-caption: $gray-light !default;
+$color-code: $gray-dark !default;
+$color-nav-link: $black !default;
+$color-primary-link: $black !default;
+$color-primary-underline: $gray !default;
+$color-border: $gray-light !default;
+
+// Sub-themes
+$color-red: $red;
+$color-red-lighter: $red-lightest;
+
+$color-orange: $orange;
+$color-orange-lighter: $orange-lightest;
+
+$color-purple: $purple;
+$color-purple-lighter: $purple-lightest;
+
+$color-blue: $blue;
+$color-blue-lighter: $blue-lightest;
+
+// Import sass partials (used in all themes)
+@import
+        "variables",
+        "base",
+        "components",
+        "utilities"
+;

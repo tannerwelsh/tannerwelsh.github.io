@@ -1,9 +1,9 @@
 title: Tanner Welsh
 email: tannerwelsh@gmail.com
 description: >-
-  Educator for humans (including self)
+  designer, builder, educator for humans (including self)
 baseurl: ""
-url: http://tannerwelsh.com/
+url: https://tannerwelsh.com/
 github_repo: tannerwelsh.github.io
 twitter_username: tannerwelsh
 github_username:  tannerwelsh
@@ -13,14 +13,7 @@ goodreads_username: tannerwelsh
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-
-collections:
-  - education
-  - projects
-  - volunteer
-  - work
+theme_color: colors
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

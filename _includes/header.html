@@ -1,29 +1,20 @@
-<header class="px-2 clearfix no-print">
-  <!-- <div class="left-lg absolute-lg left-0 top-0 sm-width-full mt-2">
-    <a class="no-underline-hover px-1" href="{{ site.baseurl }}/">
-      <span class="inline-block h4 hide-sm ml-2">&#x261c;</span>
-    </a>
-    <a class="italic no-underline" href="{{ site.baseurl }}/">
-       home
-    </a>
-  </div> -->
-  <div class="right-lg absolute-lg right-0 top-0">
-    <ul class="mt-1 mt-lg-2 mr-2 mr-lg-3">
-      <li class="inline-block block-lg text-right ml-1 ml-lg-0">
-        <a class="italic h4 bold no-underline" href="{{ site.baseurl }}/">
-          <!-- {{ site.title }} -->
-          Home
-        </a>
-      </li>
-      {% for my_page in site.pages %}
-        {% if my_page.title and my_page.in_menu %}
-        <li class="inline-block block-lg text-right ml-1 ml-lg-0">
-          <a class="italic no-underline h4" href="{{ my_page.url | prepend: site.baseurl }}">
-            {{ my_page.title }}
-          </a>
-        </li>
+<header class="header">
+  <nav class="container mx-auto px-2 py-2 flex flex-row" aria-label="main navigation">
+    <span class="header-title no-wrap mt-0 mr-2">{{ site.title | downcase }}</span>
+    <span>
+      {% assign menu_pages = site.pages | where: "in_menu", true | sort: "menu_order" %}
+      {% assign last_page = menu_pages | last %}
+
+      {% for menu_page in menu_pages %}
+        {% if menu_page.url == page.url %}
+          <a class="active no-underline header-link theme-{{menu_page.color}}" href="{{ menu_page.url | prepend: site.baseurl }}">{{ menu_page.title }}</a>
+        {% else %}
+          <a class="no-underline header-link theme-{{menu_page.color}}" href="{{ menu_page.url | prepend: site.baseurl }}">{{ menu_page.title }}</a>
+        {% endif %}
+        {% if menu_page.title != last_page.title %}
+          &#124;
         {% endif %}
       {% endfor %}
-    </ul>
-  </div>
+    </span>
+  </nav>
 </header>

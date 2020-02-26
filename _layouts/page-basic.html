@@ -2,7 +2,10 @@
 layout: default
 ---
 <article class="container mx-auto px-2">
-  <div class="mb-4 py-4 print-without-spacing">
+  {% if page.show_header %}
+    {% include subheader.html %}
+  {% endif %}
+  <div class="mb-2 py-2 print-without-spacing">
     {{ content }}
   </div>
 </article>
