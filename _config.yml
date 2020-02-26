@@ -13,8 +13,7 @@ goodreads_username: tannerwelsh
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
+theme_color: colors
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

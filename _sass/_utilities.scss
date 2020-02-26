@@ -18,14 +18,15 @@
 }
 
 .no-underline-hover {
-
   &:hover {
     text-decoration: none !important;
     border-bottom: none !important;
   }
 }
 
-
+.no-wrap {
+  white-space: nowrap;
+}
 
 // Link styles for navigation
 .link-primary {
@@ -35,7 +36,7 @@
   padding-bottom: 1px;
 
   &:hover {
-    color: $color-primary-link;
+    color: currentColor;
     text-decoration: none;
     border-bottom: 2px dotted;
   }
@@ -44,6 +45,7 @@
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
 .uppercase { text-transform: uppercase; }
+.smaller { font-size: $small-font-size; }
 
 .lh-condensed { line-height: 1.25; }
 
@@ -61,18 +63,35 @@
 
 
 /* Theme color utilities */
-.header-background { background-color: $color-background; }
-.header-border { border-color: $color-foreground; }
-.header-title { color: $color-title; }
-.header-text { color: $color-foreground; }
-.header-social { fill: $color-foreground; }
-.header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
+.header { background-color: $color-header-bg; }
+.header-title {
+  color: $color-header-text;
+  font-weight: $boldest;
+  font-size: $h1-size;
+}
+
+.header-link.active { font-weight: bold; border-bottom: 1px dotted; }
+.header-link.theme-red:hover { color: $color-red-lighter !important; }
+.header-link.theme-orange:hover { color: $color-orange-lighter !important; }
+.header-link.theme-purple:hover { color: $color-purple-lighter !important; }
+.header-link.theme-blue:hover { color: $color-blue-lighter !important; }
+
 .text-accent { color: $color-text-accent; } // used for date in post list and home link
 .text-secondary { color: $color-text-secondary; } // used for secondary text
 .text-caption { color: $color-text-caption; } // used for captions
 
+
+
 /* Layout utilities */
 .container { max-width: $container-width; }
+
+.flex { display: flex; }
+.flex.flex-row {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 .col-1 { width: (1 / 12 * 100%); }
 .col-2 { width: (2 / 12 * 100%); }

@@ -4,13 +4,11 @@
   {% include head.html %}
 
   <!-- font-smoothing is only applied on dark themes -->
-  <body class="font-smoothing">
+  <body class="font-smoothing theme-{{page.color}}">
 
     {% include header.html %}
 
-    <div>
-      {{ content }}
-    </div>
+    {{ content }}
 
   </body>
 
