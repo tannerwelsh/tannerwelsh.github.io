@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: page-basic
 title: "teaching"
 in_menu: true
+menu_order: 2
 published: true
 permalink: /teaching/
 ---

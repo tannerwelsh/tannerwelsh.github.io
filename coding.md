@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: page-basic
 title: "coding"
 in_menu: true
+menu_order: 1
 published: true
 permalink: /coding/
 ---

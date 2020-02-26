@@ -1,7 +1,8 @@
 ---
-layout: home
+layout: page-basic
 title: "contact"
 in_menu: true
+menu_order: 3
 published: true
 permalink: /contact/
 ---
