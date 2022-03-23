@@ -3,6 +3,8 @@ source "https://rubygems.org"
 # Use GH Pages. To upgrade, run `bundle update github-pages`
 gem "github-pages", group: :jekyll_plugins
 
+gem "webrick" # Jekyll web server
+
 # Jekyll plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
