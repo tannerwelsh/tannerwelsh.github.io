@@ -1,4 +1,3 @@
-import * as config from '../../config.mjs'
+const basePath = '/'
 
-export const imagePath = (filename: string) =>
-  [config.basePath, filename].join('/')
+export const imagePath = (filename: string) => [basePath, filename].join('/')

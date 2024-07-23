@@ -1,7 +1,6 @@
 import rehypePrism from '@mapbox/rehype-prism'
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
-import * as config from './config.mjs'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -19,7 +18,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: config.basePath,
+  basePath: '',
 
   /**
    * Disable server-based image optimization. Next.js does not support
