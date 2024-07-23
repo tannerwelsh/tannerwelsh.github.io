@@ -1,7 +1,5 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import {
@@ -9,42 +7,8 @@ import {
   InstagramIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait-bw.jpg'
-
-function SocialLink({
-  className,
-  href,
-  children,
-  icon: Icon,
-}: {
-  className?: string
-  href: string
-  icon: React.ComponentType<{ className?: string }>
-  children: React.ReactNode
-}) {
-  return (
-    <li className={clsx(className, 'flex')}>
-      <Link
-        href={href}
-        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
-      >
-        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
-        <span className="ml-4">{children}</span>
-      </Link>
-    </li>
-  )
-}
-
-function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-      />
-    </svg>
-  )
-}
+import { SocialLink } from '@/components/SocialLink'
+import { imagePath } from '@/lib/image'
 
 export const metadata: Metadata = {
   title: 'Tanner Welsh',
@@ -59,10 +23,11 @@ export default function Home() {
         <div className="lg:pl-20">
           <div className="max-w-xs lg:max-w-none">
             <Image
-              src={portraitImage}
+              src={imagePath('portrait-bw.jpg')}
               alt="Portrait of Tanner"
-              sizes="(min-width: 1024px) 32rem, 20rem"
-              className="aspect-square rounded-md bg-zinc-100 object-cover dark:bg-zinc-800"
+              width="1024"
+              height="1024"
+              className="aspect-square w-fit rounded-md bg-zinc-100 object-cover dark:bg-zinc-800"
             />
           </div>
         </div>
@@ -120,13 +85,6 @@ export default function Home() {
               className="mt-4"
             >
               Noodling on Instagram
-            </SocialLink>
-            <SocialLink
-              href="mailto:tannerwelsh@gmail.com"
-              icon={MailIcon}
-              className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-            >
-              tannerwelsh@gmail.com
             </SocialLink>
           </ul>
         </div>
