@@ -9,16 +9,20 @@ Uses Spotlight [Tailwind UI](https://tailwindui.com) site template built using [
 To get started with this template, first install the npm dependencies:
 
 ```bash
-pnpm install
+yarn install
 ```
 
 Next, run the development server:
 
 ```bash
-pnpm run dev
+yarn run dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+## Deployment
+
+Deployed with GitHub pages using the custom action in `.github/workflows/nextjs.yml`.
 
 ## Customizing
 
