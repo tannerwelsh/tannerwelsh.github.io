@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-export default const nextConfig = {
+const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
 
   /**
@@ -14,7 +14,7 @@ export default const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: 'http://tannerwelsh.com/',
+  basePath: '/tannerwelsh.github.io',
 
   /**
    * Disable server-based image optimization. Next.js does not support
@@ -27,3 +27,4 @@ export default const nextConfig = {
   },
 }
 
+export default nextConfig
